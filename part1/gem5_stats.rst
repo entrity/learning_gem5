@@ -82,11 +82,11 @@ Below is pulled from the config.ini generated when the ``simple.py`` configurati
     master=system.cpu.interrupts[0].pio system.cpu.interrupts[0].int_slave system.mem_ctrl.port
     slave=system.cpu.icache_port system.cpu.dcache_port system.cpu.interrupts[0].int_master system.system_port
 
-Here we see that at the beginning of the description of each SimObject is first it's name as created in the configuration file surrounded by square brackets (e.g., ``[system.membus]``).
+Here we see that at the beginning of the description of each SimObject is first its name as created in the configuration file surrounded by square brackets (e.g., ``[system.membus]``).
 
-Next, every parameter of the SimObject is shown with it's value, including parameters not explicitly set in the configuration file.
+Next, every parameter of the SimObject is shown with its value, including parameters not explicitly set in the configuration file.
 For instance, the configuration file sets the clock domain to be 1 GHz (1000 ticks in this case).
-However, it did not set the cache line size (which is 64 in the ``system``) object.
+However, it did not set the cache line size (which is 64 in the ``system`` object).
 
 The ``config.ini`` file is a valuable tool for ensuring that you are simulating what you think you're simulating.
 There are many possible ways to set default values, and to override default values, in gem5.

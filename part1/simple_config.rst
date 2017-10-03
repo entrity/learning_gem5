@@ -203,7 +203,7 @@ You can specify any application built for x86 and that's been statically compile
     However, if you need high fidelity modeling of the system, or OS interaction like page table walks are important, then you should use FS mode.
 
 First, we have to create the process (another SimObject).
-Then we set the processes command to the command we want to run.
+Then we set the process' command to the command we want to run.
 This is a list similar to argv, with the executable in the first position and the arguments to the executable in the rest of the list.
 Then we set the CPU to use the process as it's workload, and finally create the functional execution contexts in the CPU.
 

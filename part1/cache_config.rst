@@ -287,7 +287,7 @@ The, we can use our helper function to connect the L1 caches to the L2 bus.
     system.cpu.icache.connectBus(system.l2bus)
     system.cpu.dcache.connectBus(system.l2bus)
 
-Next, we can create out L2 cache and connect it to the L2 bus and the memory bus.
+Next, we can create our L2 cache and connect it to the L2 bus and the memory bus.
 
 .. code-block:: python
 
